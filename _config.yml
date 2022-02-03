@@ -46,36 +46,38 @@ head:
 navbar: 
 
   # 左侧名称显示
-  sitename: Demo
+  sitename: SCHeng
   
   # 右侧站内导航链接
   menu: 
     - name: 首页
       url: /
-    - name: 标签
-      url: /tags/
+    # - name: 标签
+    #  url: /tags/
     - name: 归档
       url: /archives/
-    - name: 友链
-      url: /friends/
-    - name: Page
-      url: /page/
+    # - name: 友链
+    #  url: /friends/
+    # - name: Page
+    #  url: /page/
+    - name: Feed
+      url: /atom.xml
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
-  sticky: false
+  sticky: true
 
 # 封面 cover 设置
 cover: 
 
   # 显示在最上方 cover 处的站点名称
-  sitename: Demo
+  sitename: SCHeng
 
   # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename
-  avatar: 
+  avatar: https://scheng52123.com/wp-content/uploads/2021/11/ayanami-2.gif
   
   # sitename/avatar 下方的一句话介绍
-  description: Hi, nice to meet you!
+  description: It all returns to nothing.
 
 
 
@@ -87,12 +89,12 @@ style:
 
   # 颜色配置
   color: 
-    main_color: '#6200ee'
-    main_color_dark: '#bb86fc'
+    main_color: '#758ac7'
+    main_color_dark: '#556aa7'
 
   # 弧度设置
   radius: 
-    main_radius: 5px
+    main_radius: 0px
     
   # 间距设置
   space: 
@@ -103,7 +105,7 @@ style:
   highlight: 
 
     # 默认代码高亮主题
-    default: 
+    default: monokai
 
     # 暗色代码高亮主题
     darkmode: 
@@ -121,7 +123,7 @@ style:
   prismjs: 
 
     # 默认代码高亮主题
-    default: 
+    default: monokai
 
     # 暗色代码高亮主题
     darkmode: 
@@ -139,8 +141,8 @@ meta:
   
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    name: ChrAlpha
-    url: https://chralpha.com
+    name: scheng
+    url: https://shaochenheng.github.io
   
   # 文章创建日期
   date:
@@ -154,7 +156,7 @@ meta:
 
   # 文章缩略图
   thumbnail: 
-    enable: false
+    enable: true
     default:   # 默认缩略图，当页面 `thumbnail` 字段为空时 fallback 至此参数
 
   # 文章过时提醒
@@ -164,8 +166,8 @@ meta:
 
   # 文章自动摘要
   auto_excerpt: 
-    enable: false
-    length: 150
+    enable: true
+    length: 300
 
   # 文章目录
   toc: 
@@ -399,12 +401,12 @@ fancybox:
   auto: false
   
 # 返回顶部
-back_to_top: false
+back_to_top: true
 
 # 深色模式
-darkmode: false
+darkmode: true
 
-# Mermaid Diagrams
+# 	  Mermaid Diagrams
 mermaid: 
   enable: false
   options: 
@@ -535,7 +537,7 @@ vendors:
     js: 
 
   # 自定义 script
-  custom_script: 
+  custom_script:
     # - ''
     # - ''
 
